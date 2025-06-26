@@ -15,7 +15,7 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #fff
   
   .hero-content {
     position: relative;
-    width: 50%;
+    width: 100%;
     height: 100%;
   }
   

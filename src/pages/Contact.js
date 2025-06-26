@@ -1,10 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Contact.css';
+import { Helmet } from 'react-helmet';
 
 function Contact() {
   return (
+
     <>
+    <Helmet>
+  <title>Contact Creonox – Let’s Build Something Great</title>
+  <meta name="description" content="Ready to start your project? Contact Creonox Technologies to collaborate on custom websites, apps, and branding solutions." />
+</Helmet>
+
     <div className="contact-page">
       {/* Hero */}
       <div className="contact-hero">

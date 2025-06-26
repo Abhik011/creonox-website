@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import { Link } from "react-router-dom";
+import { Helmet } from 'react-helmet';
 import './About.css';
 import manasi from "../assets/manasi-sonje.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -55,6 +56,11 @@ function About() {
 
   return (
     <>
+    <Helmet>
+  <title>About Creonox – Innovation, Expertise & Vision</title>
+  <meta name="description" content="Get to know Creonox Technologies – our team, mission, and journey building cutting-edge tech for the future." />
+</Helmet>
+
       <div className="About-hero reveal-on-scroll">
         <div className="About-content reveal-on-scroll">
           <h1>Not Just Developer</h1>

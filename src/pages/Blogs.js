@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Blogs.css';
+import { Helmet } from 'react-helmet';
 import whywebsite2025imageb from "../assets/8744789.jpg";
 import AiAndUXBlogimages from '../assets/AiAndUXBlog.png';
 import startupimages from '../assets/StartupMistakesBlog.png';
@@ -9,7 +10,13 @@ import GPMM from '../assets/GooglePasswordManager.png';
 
 function Blogs() {
   return (
+    
     <div className="blogs-page">
+      <Helmet>
+  <title>Tech Insights & Startup Tips | Creonox Blog</title>
+  <meta name="description" content="Read the latest tech insights, UI/UX trends, and startup strategies from Creonox experts. Fresh blogs every week." />
+</Helmet>
+
       {/* Hero Section */}
       <div className="blogs-hero">
         <h1><span className="gradient-text">Innovate. Educate. Inspire.</span></h1>

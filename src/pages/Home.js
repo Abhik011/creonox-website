@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import "./Home.css";
 import computerimage from "../assets/computer-image.png";
 import whywebsiteimage from "../assets/8744789.jpg";
@@ -50,7 +51,13 @@ export default function Home() {
   return (
     < >
       {/* Dot Navigation */}
-     
+
+      <Helmet>
+        <title>Top Mobile App Development Company India – Android, iOS, AI</title>
+
+        <meta name="description" content="Creonox, a top mobile app development company India, builds Android, iOS, Flutter, AI apps designed to grow your business."> </meta>
+
+      </Helmet>
 
       {/* Hero Section */}
       <section id="home" className="home-body reveal-on-scroll">
@@ -181,13 +188,13 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="footer">
-      <div className="footer-shapes reveal-on-scroll">
-    <div className="shape cube"></div>
-    <div className="shape zigzag"></div>
-    <svg className="shape line-svg" viewBox="0 0 300 10" preserveAspectRatio="none">
-      <line x1="0" y1="5" x2="300" y2="5" stroke="#999" strokeWidth="2" strokeDasharray="10,5" />
-    </svg>
-  </div>
+        <div className="footer-shapes reveal-on-scroll">
+          <div className="shape cube"></div>
+          <div className="shape zigzag"></div>
+          <svg className="shape line-svg" viewBox="0 0 300 10" preserveAspectRatio="none">
+            <line x1="0" y1="5" x2="300" y2="5" stroke="#999" strokeWidth="2" strokeDasharray="10,5" />
+          </svg>
+        </div>
         <div className="footer-cols">
           <div className="footer-col reveal-on-scroll">
             <h3>CREONOX</h3>
