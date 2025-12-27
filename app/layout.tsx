@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "creonox Technologies | ERP, FinTech, Logistics & Mobile App Development Company",
+  title: "Creonox Technologies | ERP, FinTech, Logistics & Mobile App Development Company",
   description:
-    "creonox Technologies builds custom ERP systems, FinTech platforms, logistics software, e-commerce backends and mobile applications for scalable businesses. Code ownership. No SaaS limits.",
+    "Creonox Technologies builds custom ERP systems, FinTech platforms, logistics software, e-commerce backends and mobile applications for scalable businesses. Code ownership. No SaaS limits.",
 
   keywords: [
     "custom ERP development",
@@ -43,10 +43,10 @@ export const metadata: Metadata = {
   themeColor: "#A78BFA",
 
   openGraph: {
-    title: "creonox Technologies | ERP, FinTech & Mobile Apps",
+    title: "Creonox Technologies | ERP, FinTech & Mobile Apps",
     description:
       "Custom-built ERP, FinTech systems, logistics software and mobile apps designed for scale, accuracy and ownership.",
-    url: "https://www.creonox.in",
+    url: "https://www.Creonox.in",
     siteName: "Creonox Technologies",
     images: [
       {
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "creonox Technologies | Custom ERP & FinTech Development",
+    title: "Creonox Technologies | Custom ERP & FinTech Development",
     description:
       "Enterprise-grade ERP, logistics, FinTech & mobile app development company.",
     images: ["/clogo.svg"],

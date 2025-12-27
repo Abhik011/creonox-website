@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Apple, Play } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
-import creonox from "@/public/creonox.svg";
+import Creonox from "@/public/creonox.svg";
 
 import {
     Layers,
@@ -49,12 +49,12 @@ export default function Hero() {
         <main className="relative min-h-screen bg-gradient-to-b from-[#0b1220] via-[#0e1a33] to-[#0b1220] text-white overflow-hidden">
             <Head>
                 <title>
-                    creonox Technologies | ERP, Logistics, FinTech & Mobile App Development
+                    Creonox Technologies | ERP, Logistics, FinTech & Mobile App Development
                 </title>
 
                 <meta
                     name="description"
-                    content="creonox Technologies builds custom ERP systems, logistics software, FinTech platforms and mobile applications. Scalable, secure and fully owned solutions for modern businesses."
+                    content="Creonox Technologies builds custom ERP systems, logistics software, FinTech platforms and mobile applications. Scalable, secure and fully owned solutions for modern businesses."
                 />
 
                 <meta
@@ -62,11 +62,11 @@ export default function Hero() {
                     content="ERP software company, logistics ERP, fintech software development, mobile app development company, custom ERP India"
                 />
 
-                <meta name="author" content="creonox Technologies" />
+                <meta name="author" content="Creonox Technologies" />
                 <meta name="robots" content="index, follow" />
 
                 {/* Open Graph */}
-                <meta property="og:title" content="creonox Technologies" />
+                <meta property="og:title" content="Creonox Technologies" />
                 <meta
                     property="og:description"
                     content="Custom ERP, Logistics, FinTech & Mobile App Development Company"
@@ -88,8 +88,8 @@ export default function Hero() {
                     {/* BRAND (LEFT) */}
                     <div className="flex items-center gap-2 font-semibold tracking-wide">
                         <Image
-                            src={creonox}
-                            alt="creonox Technologies Logo"
+                            src={Creonox}
+                            alt="Creonox Technologies Logo"
                             className="h-5 w-auto"
                             priority
                         />
@@ -147,7 +147,7 @@ export default function Hero() {
                     </h1>
 
                     <p className="mt-6 text-white/70 max-w-xl">
-                        creonox Technologies builds custom ERP systems, FinTech platforms,
+                        Creonox Technologies builds custom ERP systems, FinTech platforms,
                         logistics software, e-commerce backends and mobile applications —
                         engineered for scale, security and full code ownership.
                     </p>
@@ -614,7 +614,7 @@ export default function Hero() {
                 <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16">
                     <div>
                         <h2 className="text-3xl md:text-4xl font-semibold mb-6">
-                            Why choose <span className="text-violet-400">creonox</span>
+                            Why choose <span className="text-violet-400">Creonox</span>
                         </h2>
                         <ul className="space-y-4 text-white/70">
                             {[
@@ -815,7 +815,7 @@ export default function Hero() {
     {/* ================= BRAND / ABOUT ================= */}
     <div>
       <h3 className="text-white font-semibold mb-3">
-        creonox <span className="text-violet-400">Technologies</span>
+        Creonox <span className="text-violet-400">Technologies</span>
       </h3>
       <p className="text-white/60 leading-relaxed">
         We design and build custom ERP systems, FinTech platforms,
@@ -850,8 +850,8 @@ export default function Hero() {
 
         <li className="flex items-center gap-3">
           <Mail className="h-4 w-4 text-violet-400" />
-          <a href="mailto:contact@creonox.in" className="hover:text-white">
-            contact@creonox.in
+          <a href="mailto:contact@Creonox.in" className="hover:text-white">
+            contact@Creonox.in
           </a>
         </li>
 
@@ -918,7 +918,7 @@ export default function Hero() {
 
         {/* WhatsApp CTA */}
         <a
-          href="https://wa.me/917517050463?text=Hi%creonox%20Team,%20I%20would%20like%20to%20know%20more."
+          href="https://wa.me/917517050463?text=Hi%Creonox%20Team,%20I%20would%20like%20to%20know%20more."
           target="_blank"
           className="
             ml-2 flex items-center gap-2
@@ -938,13 +938,13 @@ export default function Hero() {
 
   {/* ================= BOTTOM BAR ================= */}
   <div className="border-t border-white/10 py-6 text-center text-white/50 text-xs">
-    © {new Date().getFullYear()} creonox Technologies · ERP · FinTech · Logistics · Mobile Apps
+    © {new Date().getFullYear()} Creonox Technologies · ERP · FinTech · Logistics · Mobile Apps
   </div>
 </footer>
 
             {/* ================= WHATSAPP FLOATING CTA ================= */}
             <a
-                href="https://wa.me/917517050463?text=Hi%creonox%20Team,%20I%20am%20interested%20in%20your%20software%20solutions."
+                href="https://wa.me/917517050463?text=Hi%Creonox%20Team,%20I%20am%20interested%20in%20your%20software%20solutions."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="
