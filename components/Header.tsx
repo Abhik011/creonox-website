@@ -20,7 +20,7 @@ export default function Header() {
         <div className="flex items-center gap-2 select-none">
           <Truck className="h-6 w-6 text-violet-400 drop-shadow-[0_0_6px_rgba(167,139,250,0.6)]" />
           <span className="font-semibold tracking-wide text-white">
-            clogo <span className="text-violet-400">Logistics ERP</span>
+            creonox <span className="text-violet-400">Logistics ERP</span>
           </span>
         </div>
 

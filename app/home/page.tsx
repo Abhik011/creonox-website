@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Apple, Play } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
-import clogo from "@/public/creonox.svg";
+import creonox from "@/public/creonox.svg";
 
 import {
     Layers,
@@ -88,7 +88,7 @@ export default function Hero() {
                     {/* BRAND (LEFT) */}
                     <div className="flex items-center gap-2 font-semibold tracking-wide">
                         <Image
-                            src={clogo}
+                            src={creonox}
                             alt="creonox Technologies Logo"
                             className="h-5 w-auto"
                             priority

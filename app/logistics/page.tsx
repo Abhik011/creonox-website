@@ -759,7 +759,7 @@ export default function LogisticsLanding() {
                         </h2>
 
                         <p className="text-white/70 max-w-3xl mx-auto">
-                            clogo builds custom Logistics ERP systems for companies that have
+                            creonox builds custom Logistics ERP systems for companies that have
                             outgrown spreadsheets, fragmented tools and generic SaaS software.
                         </p>
                     </div>
@@ -769,14 +769,14 @@ export default function LogisticsLanding() {
                         {/* Left */}
                         <div>
                             <h3 className="text-2xl font-semibold mb-4">
-                                Why clogo exists
+                                Why creonox exists
                             </h3>
 
                             <p className="text-white/70 mb-6 leading-relaxed">
                                 Most logistics companies lose revenue due to billing errors, COD
                                 mismatches, GST issues and disconnected operations.
                                 <br /><br />
-                                We started clogo to solve this exact problem — by building
+                                We started creonox to solve this exact problem — by building
                                 <span className="text-white font-medium">
                                     {" "}custom ERP systems that mirror real logistics workflows
                                 </span>
@@ -890,7 +890,7 @@ export default function LogisticsLanding() {
           transition-all
         "
                         >
-                            Talk to clogo
+                            Talk to creonox
                         </Button>
                     </div>
                 </div>
@@ -905,7 +905,7 @@ export default function LogisticsLanding() {
                             <span className="text-violet-400">real logistics operations</span>
                         </h2>
                         <p className="text-white/70 max-w-3xl mx-auto">
-                            ERP systems built by clogo recover revenue, reduce billing time,
+                            ERP systems built by creonox recover revenue, reduce billing time,
                             and give full operational control.
                         </p>
                     </div>
@@ -981,7 +981,7 @@ export default function LogisticsLanding() {
                     {[
                         {
                             q: "Is this a SaaS product?",
-                            a: "No. clogo builds a custom ERP tailored to your logistics workflow. You own the system.",
+                            a: "No. creonox builds a custom ERP tailored to your logistics workflow. You own the system.",
                         },
                         {
                             q: "What is the typical project cost?",
@@ -1035,7 +1035,7 @@ export default function LogisticsLanding() {
                 <div className="max-w-7xl mx-auto px-6">
                     <h2 className="text-3xl md:text-4xl font-semibold text-center mb-14">
                         Why logistics companies choose{" "}
-                        <span className="text-violet-400">clogo</span>
+                        <span className="text-violet-400">creonox</span>
                     </h2>
 
                     <div className="overflow-x-auto">
@@ -1044,7 +1044,7 @@ export default function LogisticsLanding() {
                                 <thead>
                                     <tr className="bg-white/10 text-white/80">
                                         <th className="p-5 text-left font-medium">Feature</th>
-                                        <th className="p-5 text-center font-medium">clogo ERP</th>
+                                        <th className="p-5 text-center font-medium">creonox ERP</th>
                                         <th className="p-5 text-center font-medium">SaaS ERP</th>
                                     </tr>
                                 </thead>
@@ -1056,14 +1056,14 @@ export default function LogisticsLanding() {
                                         ["COD logic flexibility", "✔ Full control", "✖ Fixed"],
                                         ["GST billing accuracy", "✔ High", "⚠ Depends"],
                                         ["Scales with operations", "✔ Yes", "✖ Expensive"],
-                                    ].map(([feature, clogo, saas]) => (
+                                    ].map(([feature, creonox, saas]) => (
                                         <tr
                                             key={feature}
                                             className="border-t border-white/10 hover:bg-white/[0.04] transition"
                                         >
                                             <td className="p-5 text-white/90">{feature}</td>
                                             <td className="p-5 text-center text-emerald-400 font-medium">
-                                                {clogo}
+                                                {creonox}
                                             </td>
                                             <td className="p-5 text-center text-red-400 font-medium">
                                                 {saas}
@@ -1086,7 +1086,7 @@ export default function LogisticsLanding() {
                 <p className="text-white/70 max-w-4xl mx-auto leading-relaxed mb-10">
                     We believe logistics companies should not lose money due to bad systems.
                     <br /><br />
-                    clogo exists to build ERP platforms that give founders, finance teams
+                    creonox exists to build ERP platforms that give founders, finance teams
                     and operations leaders **absolute control over billing, data and growth**.
                 </p>
 

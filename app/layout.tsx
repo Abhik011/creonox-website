@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "clogo Technologies | ERP, FinTech, Logistics & Mobile App Development Company",
+  title: "creonox Technologies | ERP, FinTech, Logistics & Mobile App Development Company",
   description:
-    "clogo Technologies builds custom ERP systems, FinTech platforms, logistics software, e-commerce backends and mobile applications for scalable businesses. Code ownership. No SaaS limits.",
+    "creonox Technologies builds custom ERP systems, FinTech platforms, logistics software, e-commerce backends and mobile applications for scalable businesses. Code ownership. No SaaS limits.",
 
   keywords: [
     "custom ERP development",
@@ -26,12 +26,12 @@ export const metadata: Metadata = {
     "custom software development India",
     "ecommerce backend development",
     "SaaS product development",
-    "clogo Technologies",
+    "Creonox Technologies",
   ],
 
-  authors: [{ name: "clogo Technologies" }],
-  creator: "clogo Technologies",
-  publisher: "clogo Technologies",
+  authors: [{ name: "Creonox Technologies" }],
+  creator: "Creonox Technologies",
+  publisher: "Creonox Technologies",
 
   /* ✅ USE clogo.svg EVERYWHERE */
   icons: {
@@ -43,17 +43,17 @@ export const metadata: Metadata = {
   themeColor: "#A78BFA",
 
   openGraph: {
-    title: "clogo Technologies | ERP, FinTech & Mobile Apps",
+    title: "creonox Technologies | ERP, FinTech & Mobile Apps",
     description:
       "Custom-built ERP, FinTech systems, logistics software and mobile apps designed for scale, accuracy and ownership.",
-    url: "https://www.clogo.in",
-    siteName: "clogo Technologies",
+    url: "https://www.creonox.in",
+    siteName: "Creonox Technologies",
     images: [
       {
         url: "/clogo.svg",
         width: 512,
         height: 512,
-        alt: "clogo Technologies Logo",
+        alt: "Creonox Technologies Logo",
       },
     ],
     locale: "en_IN",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "clogo Technologies | Custom ERP & FinTech Development",
+    title: "creonox Technologies | Custom ERP & FinTech Development",
     description:
       "Enterprise-grade ERP, logistics, FinTech & mobile app development company.",
     images: ["/clogo.svg"],
