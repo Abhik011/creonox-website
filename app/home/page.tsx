@@ -850,8 +850,8 @@ export default function Hero() {
 
         <li className="flex items-center gap-3">
           <Mail className="h-4 w-4 text-violet-400" />
-          <a href="mailto:hello@Creonox.in" className="hover:text-white">
-            hello@Creonox.in
+          <a href="mailto:hello@Creonox.com" className="hover:text-white">
+            hello@Creonox.com
           </a>
         </li>
 
@@ -901,7 +901,7 @@ export default function Hero() {
         </a>
 
         <a
-          href="https://www.instagram.com/creonox.in/"
+          href="https://www.instagram.com/creonox.global/"
           target="_blank"
           className="text-white/60 hover:text-violet-400 transition"
         >
