@@ -850,8 +850,8 @@ export default function Hero() {
 
         <li className="flex items-center gap-3">
           <Mail className="h-4 w-4 text-violet-400" />
-          <a href="mailto:contact@Creonox.in" className="hover:text-white">
-            contact@Creonox.in
+          <a href="mailto:hello@Creonox.in" className="hover:text-white">
+            hello@Creonox.in
           </a>
         </li>
 
@@ -893,7 +893,7 @@ export default function Hero() {
       {/* Social Icons */}
       <div className="flex items-center gap-4">
         <a
-          href="https://www.linkedin.com"
+          href="https://www.linkedin.com/company/creonox-technologies-pvt-ltd/"
           target="_blank"
           className="text-white/60 hover:text-violet-400 transition"
         >
@@ -901,7 +901,7 @@ export default function Hero() {
         </a>
 
         <a
-          href="https://www.instagram.com"
+          href="https://www.instagram.com/creonox.in/"
           target="_blank"
           className="text-white/60 hover:text-violet-400 transition"
         >
@@ -909,7 +909,7 @@ export default function Hero() {
         </a>
 
         <a
-          href="https://twitter.com"
+          href="https://x.com/CreonoxGlobal"
           target="_blank"
           className="text-white/60 hover:text-violet-400 transition"
         >
@@ -918,7 +918,7 @@ export default function Hero() {
 
         {/* WhatsApp CTA */}
         <a
-          href="https://wa.me/917517050463?text=Hi%Creonox%20Team,%20I%20would%20like%20to%20know%20more."
+        href="https://wa.me/917517050463?text=Hi%20Creonox%20Team,%20I%20am%20interested%20in%20your%20software%20solutions."
           target="_blank"
           className="
             ml-2 flex items-center gap-2
@@ -944,7 +944,7 @@ export default function Hero() {
 
             {/* ================= WHATSAPP FLOATING CTA ================= */}
             <a
-                href="https://wa.me/917517050463?text=Hi%Creonox%20Team,%20I%20am%20interested%20in%20your%20software%20solutions."
+            href="https://wa.me/917517050463?text=Hi%20Creonox%20Team,%20I%20am%20interested%20in%20your%20software%20solutions."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="
