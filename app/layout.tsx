@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "Creonox Technologies | ERP, FinTech & Mobile Apps",
     description:
       "Custom-built ERP, FinTech systems, logistics software and mobile apps designed for scale, accuracy and ownership.",
-    url: "https://www.Creonox.in",
+    url: "https://www.Creonox.com",
     siteName: "Creonox Technologies",
     images: [
       {

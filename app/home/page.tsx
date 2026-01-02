@@ -491,6 +491,21 @@ export default function Hero() {
                             available: false,
                         },
                         {
+                            title: "Medical ERP",
+                            icon: <Layers />,
+                            desc: "End-to-end medical & pharmacy ERP with POS billing, inventory, GST compliance and multi-branch control.",
+                            preview: [
+                                "POS Billing",
+                                "Inventory & Expiry",
+                                "GST Invoices",
+                                "Schedule H"
+                            ],
+                            href: "https://medical-erp-demo.vercel.app/",
+                            popular: true,
+                            available: true,
+                            featured: true,
+                        },
+                        {
                             title: "Logistics Software",
                             icon: <Truck />,
                             desc: "Shipment tracking, COD reconciliation & logistics billing.",
@@ -809,118 +824,118 @@ export default function Hero() {
 
 
 
-           <footer className="border-t border-white/10 bg-black/40 relative">
-  <div className="max-w-7xl mx-auto px-6 py-14 grid gap-12 md:grid-cols-4 text-sm">
+            <footer className="border-t border-white/10 bg-black/40 relative">
+                <div className="max-w-7xl mx-auto px-6 py-14 grid gap-12 md:grid-cols-4 text-sm">
 
-    {/* ================= BRAND / ABOUT ================= */}
-    <div>
-      <h3 className="text-white font-semibold mb-3">
-        Creonox <span className="text-violet-400">Technologies</span>
-      </h3>
-      <p className="text-white/60 leading-relaxed">
-        We design and build custom ERP systems, FinTech platforms,
-        logistics software and mobile applications — scalable,
-        secure and fully owned by you.
-      </p>
-    </div>
+                    {/* ================= BRAND / ABOUT ================= */}
+                    <div>
+                        <h3 className="text-white font-semibold mb-3">
+                            Creonox <span className="text-violet-400">Technologies</span>
+                        </h3>
+                        <p className="text-white/60 leading-relaxed">
+                            We design and build custom ERP systems, FinTech platforms,
+                            logistics software and mobile applications — scalable,
+                            secure and fully owned by you.
+                        </p>
+                    </div>
 
-    {/* ================= SERVICES ================= */}
-    <div>
-      <h4 className="text-white font-medium mb-4">Services</h4>
-      <ul className="space-y-2 text-white/60">
-        <li>Custom ERP Development</li>
-        <li>Logistics Software</li>
-        <li>FinTech Systems</li>
-        <li>Mobile App Development</li>
-        <li>E-commerce Platforms</li>
-      </ul>
-    </div>
+                    {/* ================= SERVICES ================= */}
+                    <div>
+                        <h4 className="text-white font-medium mb-4">Services</h4>
+                        <ul className="space-y-2 text-white/60">
+                            <li>Custom ERP Development</li>
+                            <li>Logistics Software</li>
+                            <li>FinTech Systems</li>
+                            <li>Mobile App Development</li>
+                            <li>E-commerce Platforms</li>
+                        </ul>
+                    </div>
 
-    {/* ================= CONTACT ================= */}
-    <div>
-      <h4 className="text-white font-medium mb-4">Contact</h4>
+                    {/* ================= CONTACT ================= */}
+                    <div>
+                        <h4 className="text-white font-medium mb-4">Contact</h4>
 
-      <ul className="space-y-3 text-white/60">
-        <li className="flex items-center gap-3">
-          <Phone className="h-4 w-4 text-violet-400" />
-          <a href="tel:+917517050463" className="hover:text-white">
-            +91 75170 50463
-          </a>
-        </li>
+                        <ul className="space-y-3 text-white/60">
+                            <li className="flex items-center gap-3">
+                                <Phone className="h-4 w-4 text-violet-400" />
+                                <a href="tel:+917517050463" className="hover:text-white">
+                                    +91 75170 50463
+                                </a>
+                            </li>
 
-        <li className="flex items-center gap-3">
-          <Mail className="h-4 w-4 text-violet-400" />
-          <a href="mailto:hello@Creonox.com" className="hover:text-white">
-            hello@Creonox.com
-          </a>
-        </li>
+                            <li className="flex items-center gap-3">
+                                <Mail className="h-4 w-4 text-violet-400" />
+                                <a href="mailto:hello@Creonox.com" className="hover:text-white">
+                                    hello@Creonox.com
+                                </a>
+                            </li>
 
-        <li className="flex items-center gap-3">
-          <MessageCircle className="h-4 w-4 text-violet-400" />
-          India · Serving Global Clients
-        </li>
-      </ul>
-    </div>
+                            <li className="flex items-center gap-3">
+                                <MessageCircle className="h-4 w-4 text-violet-400" />
+                                India · Serving Global Clients
+                            </li>
+                        </ul>
+                    </div>
 
-    {/* ================= NEWSLETTER + SOCIAL ================= */}
-    <div>
-      <h4 className="text-white font-medium mb-4">Stay Connected</h4>
+                    {/* ================= NEWSLETTER + SOCIAL ================= */}
+                    <div>
+                        <h4 className="text-white font-medium mb-4">Stay Connected</h4>
 
-      {/* Newsletter */}
-      <form className="flex items-center gap-2 mb-5">
-        <input
-          type="email"
-          placeholder="Your email"
-          className="
+                        {/* Newsletter */}
+                        <form className="flex items-center gap-2 mb-5">
+                            <input
+                                type="email"
+                                placeholder="Your email"
+                                className="
             w-full rounded-xl bg-black/40 border border-white/10
             px-4 py-2 text-sm text-white placeholder:text-white/40
             focus:outline-none focus:border-violet-400
           "
-        />
-        <button
-          type="submit"
-          className="
+                            />
+                            <button
+                                type="submit"
+                                className="
             bg-violet-500 hover:bg-violet-400
             text-black px-4 py-2 rounded-xl
             shadow-[0_0_20px_rgba(167,139,250,0.5)]
             transition
           "
-        >
-          Join
-        </button>
-      </form>
+                            >
+                                Join
+                            </button>
+                        </form>
 
-      {/* Social Icons */}
-      <div className="flex items-center gap-4">
-        <a
-          href="https://www.linkedin.com/company/creonox-technologies-pvt-ltd/"
-          target="_blank"
-          className="text-white/60 hover:text-violet-400 transition"
-        >
-          <Linkedin className="h-5 w-5" />
-        </a>
+                        {/* Social Icons */}
+                        <div className="flex items-center gap-4">
+                            <a
+                                href="https://www.linkedin.com/company/creonox-technologies-pvt-ltd/"
+                                target="_blank"
+                                className="text-white/60 hover:text-violet-400 transition"
+                            >
+                                <Linkedin className="h-5 w-5" />
+                            </a>
 
-        <a
-          href="https://www.instagram.com/creonox.global/"
-          target="_blank"
-          className="text-white/60 hover:text-violet-400 transition"
-        >
-          <Instagram className="h-5 w-5" />
-        </a>
+                            <a
+                                href="https://www.instagram.com/creonox.global/"
+                                target="_blank"
+                                className="text-white/60 hover:text-violet-400 transition"
+                            >
+                                <Instagram className="h-5 w-5" />
+                            </a>
 
-        <a
-          href="https://x.com/CreonoxGlobal"
-          target="_blank"
-          className="text-white/60 hover:text-violet-400 transition"
-        >
-          <Twitter className="h-5 w-5" />
-        </a>
+                            <a
+                                href="https://x.com/CreonoxGlobal"
+                                target="_blank"
+                                className="text-white/60 hover:text-violet-400 transition"
+                            >
+                                <Twitter className="h-5 w-5" />
+                            </a>
 
-        {/* WhatsApp CTA */}
-        <a
-        href="https://wa.me/917517050463?text=Hi%20Creonox%20Team,%20I%20am%20interested%20in%20your%20software%20solutions."
-          target="_blank"
-          className="
+                            {/* WhatsApp CTA */}
+                            <a
+                                href="https://wa.me/917517050463?text=Hi%20Creonox%20Team,%20I%20am%20interested%20in%20your%20software%20solutions."
+                                target="_blank"
+                                className="
             ml-2 flex items-center gap-2
             bg-[#25D366] hover:bg-[#20bd5a]
             text-black text-xs font-medium
@@ -928,23 +943,23 @@ export default function Hero() {
             shadow-[0_0_20px_rgba(37,211,102,0.6)]
             transition
           "
-        >
-          <FaWhatsapp className="h-4 w-4" />
-          Chat
-        </a>
-      </div>
-    </div>
-  </div>
+                            >
+                                <FaWhatsapp className="h-4 w-4" />
+                                Chat
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-  {/* ================= BOTTOM BAR ================= */}
-  <div className="border-t border-white/10 py-6 text-center text-white/50 text-xs">
-    © {new Date().getFullYear()} Creonox Technologies · ERP · FinTech · Logistics · Mobile Apps
-  </div>
-</footer>
+                {/* ================= BOTTOM BAR ================= */}
+                <div className="border-t border-white/10 py-6 text-center text-white/50 text-xs">
+                    © {new Date().getFullYear()} Creonox Technologies · ERP · FinTech · Logistics · Mobile Apps
+                </div>
+            </footer>
 
             {/* ================= WHATSAPP FLOATING CTA ================= */}
             <a
-            href="https://wa.me/917517050463?text=Hi%20Creonox%20Team,%20I%20am%20interested%20in%20your%20software%20solutions."
+                href="https://wa.me/917517050463?text=Hi%20Creonox%20Team,%20I%20am%20interested%20in%20your%20software%20solutions."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="
