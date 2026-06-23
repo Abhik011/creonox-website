@@ -1,0 +1,44 @@
+/* ===============================
+   TAILWIND v4 ENTRY
+================================ */
+@import "leaflet/dist/leaflet.css";
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+
+
+/* ===============================
+   BASE STYLES
+================================ */
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #fff;
+  scroll-behavior: smooth;
+}
+
+/* ===============================
+   UX POLISH
+================================ */
+
+::selection {
+  background-color: oklch(0.488 0.243 264.376 / 40%);
+  color: white;
+}
+
+/* ===============================
+   ANIMATIONS
+================================ */
+@keyframes truckMove {
+  from {
+    transform: translateX(-10%);
+  }
+
+  to {
+    transform: translateX(120%);
+  }
+}
