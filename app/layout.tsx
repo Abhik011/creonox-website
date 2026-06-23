@@ -4,7 +4,7 @@ import "./globals.css";
 import "mapbox-gl/dist/mapbox-gl.css";
 import Header from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer"
-
+import { Analytics } from "@vercel/analytics/next"
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -105,6 +105,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <Analytics/>
         <Header />
         <main className="pt-20">
           {children}
