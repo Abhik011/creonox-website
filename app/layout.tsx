@@ -104,7 +104,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
+      <head>
+        <meta name="msvalidate.01" content="B4BBDCB128E597B3970CABAD89CE2FC4" />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+
         <Analytics/>
         <Header />
         <main className="pt-20">
