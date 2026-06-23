@@ -14,7 +14,7 @@ import {
 
 export const metadata = {
   title:
-    "White Label Development Company | White Label Software Development Services",
+    "White Label Software Development Company",
   description:
     "Partner with Creonox for white label software development services. We help agencies, startups and technology companies deliver web, mobile, ecommerce, CRM, ERP and SaaS solutions under their own brand.",
   keywords: [

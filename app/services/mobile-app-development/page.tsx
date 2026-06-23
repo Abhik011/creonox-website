@@ -14,7 +14,7 @@ import {
 
 export const metadata = {
   title:
-    "Mobile App Development Company | Android, iOS & Flutter App Development",
+    "Mobile App Development Company | iOS & Android Apps",
   description:
     "Creonox is a mobile app development company offering Android app development, iOS app development, Flutter app development and enterprise mobile application development services.",
   keywords: [

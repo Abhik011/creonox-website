@@ -14,7 +14,7 @@ import {
 
 export const metadata = {
   title:
-    "Manufacturing ERP Development Company | Custom Manufacturing ERP Software",
+    "Manufacturing ERP Software Development Company",
   description:
     "Custom Manufacturing ERP Development Company. Automate production planning, inventory, procurement, quality control, supply chain, warehouse and finance operations with a scalable ERP solution.",
   keywords: [
