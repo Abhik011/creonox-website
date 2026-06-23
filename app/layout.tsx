@@ -16,73 +16,97 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title:
-    "Creonox | AI-Powered Business Operating Systems",
+  metadataBase: new URL("https://creonox.com"),
+
+  title: {
+    default: "Creonox | AI-Powered Business Systems",
+    template: "%s | Creonox",
+  },
 
   description:
-    "Creonox builds AI-powered SaaS products and business operating systems that help organizations automate workflows, streamline operations, and scale efficiently. Creator of CA IQ and Audit Hub.",
+    "Creonox builds AI-powered ERP, CRM, SaaS, compliance, audit and business operating systems that help organizations automate workflows, improve efficiency and scale faster.",
 
   keywords: [
-    "AI SaaS",
-    "business operating system",
-    "workflow automation",
-    "CA IQ",
-    "audit software",
-    "audit management platform",
-    "AI for CA firms",
-    "accounting technology",
-    "business automation",
-    "enterprise software",
-    "compliance software",
     "Creonox",
+    "AI Software Development",
+    "ERP Development",
+    "CRM Development",
+    "SaaS Development",
+    "Business Operating System",
+    "Workflow Automation",
+    "Audit Management Software",
+    "Compliance Software",
+    "AI ERP",
+    "AI CRM",
+    "Custom Software Development",
+    "Enterprise Software",
+    "CA IQ",
     "Audit Hub",
-    "AI products",
-    "software products",
+    "Business Automation",
+    "Logistics ERP",
+    "Manufacturing ERP",
   ],
 
-  authors: [{ name: "Creonox Technologies" }],
+  authors: [
+    {
+      name: "Creonox Technologies",
+      url: "https://creonox.com",
+    },
+  ],
+
   creator: "Creonox Technologies",
   publisher: "Creonox Technologies",
 
-  icons: {
-    icon: "/creonoxcolor.svg",
-    apple: "/creonoxcolor.svg",
-    shortcut: "/creonoxcolor.svg",
+  alternates: {
+    canonical: "https://creonox.com",
   },
 
-  themeColor: "#7C3AED",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/creonoxcolor.svg",
+  },
 
   openGraph: {
-    title:
-      "Creonox | Building AI-Powered Business Operating Systems",
+    title: "Creonox | AI-Powered Business Systems",
+
     description:
-      "Creonox develops AI-powered software products including CA IQ and Audit Hub to help businesses automate workflows, improve efficiency, and scale operations.",
-    url: "https://www.creonox.com",
+      "AI-powered ERP, CRM, SaaS, compliance and audit software built for modern businesses.",
+
+    url: "https://creonox.com",
+
     siteName: "Creonox",
+
     images: [
       {
-        url: "/creonoxcolor.svg",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Creonox",
+        alt: "Creonox - AI-Powered Business Systems",
       },
     ],
+
     locale: "en_IN",
     type: "website",
   },
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "Creonox | AI-Powered Business Operating Systems",
+
+    title: "Creonox | AI-Powered Business Systems",
+
     description:
-      "Building AI-powered SaaS products for modern businesses. Creator of CA IQ and Audit Hub.",
-    images: ["/creonoxcolor.svg"],
+      "AI-powered ERP, CRM, SaaS, compliance and audit software built for modern businesses.",
+
+    images: ["/og-image.png"],
+
+    creator: "@creonox",
   },
 
   robots: {
     index: true,
     follow: true,
+
     googleBot: {
       index: true,
       follow: true,
@@ -91,8 +115,6 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-
-  metadataBase: new URL("https://www.creonox.com"),
 
   category: "Technology",
 };
