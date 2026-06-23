@@ -126,7 +126,7 @@ export default function ServicesPage() {
                 />
             </div>
 
-            <div className="relative z-10 mx-auto max-w-7xl px-6 pt-10">
+            <div className="relative z-10 mx-auto max-w-7xl px-6 ">
                 {/* Hero */}
 
                 <div className="max-w-5xl pt-20">
