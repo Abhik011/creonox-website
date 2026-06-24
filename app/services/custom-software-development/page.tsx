@@ -36,7 +36,7 @@ export const metadata = {
   ],
   alternates: {
     canonical:
-      "https://creonox.com/services/custom-software-development",
+      "https://www.creonox.com/services/custom-software-development",
   },
 };
 

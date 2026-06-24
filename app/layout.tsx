@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://creonox.com"),
+  metadataBase: new URL("https://www.creonox.com"),
 
   title: {
     default: "Creonox | AI-Powered Business Systems",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "Creonox Technologies",
-      url: "https://creonox.com",
+      url: "https://www.creonox.com",
     },
   ],
 
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
   publisher: "Creonox Technologies",
 
   alternates: {
-    canonical: "https://creonox.com",
+    canonical: "https://www.creonox.com",
   },
 
   icons: {
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
     description:
       "AI-powered ERP, CRM, SaaS, compliance and audit software built for modern businesses.",
 
-    url: "https://creonox.com",
+    url: "https://www.creonox.com",
 
     siteName: "Creonox",
 

@@ -335,7 +335,7 @@ return ( <main className="relative overflow-hidden bg-white">
             Email: hello@creonox.com
             <br />
             Website:
-            https://creonox.com
+            https://www.creonox.com
           </p>
         </div>
       </motion.div>

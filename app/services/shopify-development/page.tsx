@@ -31,7 +31,7 @@ export const metadata = {
   ],
   alternates: {
     canonical:
-      "https://creonox.com/services/shopify-development",
+      "https://www.creonox.com/services/shopify-development",
   },
 };
 

@@ -10,7 +10,7 @@ import Reveal from "@/components/animations/reveal";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://creonox.com"),
+  metadataBase: new URL("https://www.creonox.com"),
   title: {
     default: "Creonox | Custom ERP, CRM & AI Software Development",
     template: "%s | Creonox",
@@ -34,17 +34,17 @@ export const metadata: Metadata = {
     "manufacturing software development",
     "white-label software development",
   ],
-  authors: [{ name: "Creonox Technologies", url: "https://creonox.com" }],
+  authors: [{ name: "Creonox Technologies", url: "https://www.creonox.com" }],
   creator: "Creonox Technologies",
   publisher: "Creonox Technologies",
   alternates: {
-    canonical: "https://creonox.com",
+    canonical: "https://www.creonox.com",
   },
   openGraph: {
     title: "Creonox | Custom ERP, CRM & AI Software Development",
     description:
       "Creonox builds custom ERP, CRM, and AI-powered software for manufacturing, logistics, accounting, and business automation.",
-    url: "https://creonox.com",
+    url: "https://www.creonox.com",
     siteName: "Creonox",
     type: "website",
     locale: "en_US",

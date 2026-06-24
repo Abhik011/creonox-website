@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://creonox.com";
+  const baseUrl = "https://www.creonox.com";
   const lastModified = new Date();
 
   const corePages: MetadataRoute.Sitemap = [

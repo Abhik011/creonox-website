@@ -31,7 +31,7 @@ export const metadata = {
   ],
   alternates: {
     canonical:
-      "https://creonox.com/services/mobile-app-development",
+      "https://www.creonox.com/services/mobile-app-development",
   },
 };
 

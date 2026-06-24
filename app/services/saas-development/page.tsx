@@ -30,7 +30,7 @@ export const metadata = {
     "Software Product Development",
   ],
   alternates: {
-    canonical: "https://creonox.com/services/saas-development",
+    canonical: "https://www.creonox.com/services/saas-development",
   },
 };
 

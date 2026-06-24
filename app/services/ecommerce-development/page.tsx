@@ -30,7 +30,7 @@ export const metadata = {
     "Ecommerce App Development",
   ],
   alternates: {
-    canonical: "https://creonox.com/services/ecommerce-development",
+    canonical: "https://www.creonox.com/services/ecommerce-development",
   },
 };
 

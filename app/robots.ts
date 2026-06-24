@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://creonox.com/sitemap.xml",
-    host: "https://creonox.com",
+    sitemap: "https://www.creonox.com/sitemap.xml",
+    host: "https://www.creonox.com",
   };
 }
