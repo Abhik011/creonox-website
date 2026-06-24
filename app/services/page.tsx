@@ -32,12 +32,7 @@ const services = [
             "High-converting Shopify stores, Shopify Plus development, custom themes, app integrations, checkout optimization, and ecommerce automation.",
         href: "/services/shopify-development",
     },
-    {
-        title: "Custom ERP Development",
-        description:
-            "Tailored ERP systems designed around your exact workflows, processes, approvals, and operational requirements.",
-        href: "/services/custom-erp-development",
-    },
+
     {
         title: "Custom Software Development",
         description:
@@ -85,7 +80,7 @@ const services = [
 
 export default function ServicesPage() {
     return (
-        <section className="relative overflow-hidden bg-[#f7f7fb] pt-56 pb-32">
+        <section className="relative overflow-hidden bg-[#f7f7fb] pt-36 pb-32">
             {/* Background */}
             <div className="absolute inset-0 pointer-events-none">
                 <div
@@ -126,10 +121,10 @@ export default function ServicesPage() {
                 />
             </div>
 
-            <div className="relative z-10 mx-auto max-w-7xl px-6 ">
+            <div className="relative z-10 mx-auto px-6 ">
                 {/* Hero */}
 
-                <div className="max-w-5xl pt-20">
+                <div className="max-w-5xl pt-0">
                     <p className="text-xs font-semibold uppercase tracking-[0.35em] text-violet-600 ">
                         SERVICES
                     </p>
@@ -200,13 +195,13 @@ export default function ServicesPage() {
                 </div>
 
                 {/* Services Grid */}
-
-                <div className="mt-24 grid gap-8 md:grid-cols-2">
-                    {services.map((service) => (
-                        <Link
-                            key={service.title}
-                            href={service.href}
-                            className="
+    
+                    <div className="mt-24 grid gap-8 md:grid-cols-2 pt-10 ">
+                        {services.map((service) => (
+                            <Link
+                                key={service.title}
+                                href={service.href}
+                                className="
             group
             relative
             overflow-hidden
@@ -225,9 +220,9 @@ export default function ServicesPage() {
             hover:border-violet-200
             hover:shadow-[0_25px_80px_rgba(124,58,237,0.12)]
           "
-                        >
-                            <div
-                                className="
+                            >
+                                <div
+                                    className="
               absolute
               inset-0
               opacity-0
@@ -240,32 +235,33 @@ export default function ServicesPage() {
               via-white
               to-cyan-50
             "
-                            />
+                                />
 
-                            <div className="relative z-10">
-                                <h2 className="text-2xl font-semibold tracking-tight text-slate-950">
-                                    {service.title}
-                                </h2>
+                                <div className="relative z-10">
+                                    <h2 className="text-2xl font-semibold tracking-tight text-slate-950">
+                                        {service.title}
+                                    </h2>
 
-                                <p className="mt-4 text-[15px] leading-8 text-slate-600">
-                                    {service.description}
-                                </p>
+                                    <p className="mt-4 text-[15px] leading-8 text-slate-600">
+                                        {service.description}
+                                    </p>
 
-                                <div className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-violet-600">
-                                    Explore Service
+                                    <div className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-violet-600">
+                                        Explore Service
 
-                                    <ArrowRight
-                                        size={16}
-                                        className="
+                                        <ArrowRight
+                                            size={16}
+                                            className="
                   transition-transform
                   group-hover:translate-x-1
                 "
-                                    />
+                                        />
+                                    </div>
                                 </div>
-                            </div>
-                        </Link>
-                    ))}
-                </div>
+                            </Link>
+                        ))}
+                    </div>
+                
             </div>
         </section>
 

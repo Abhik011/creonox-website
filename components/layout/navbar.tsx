@@ -1,24 +1,18 @@
+
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
 import Image from "next/image";
-import {
-  ArrowRight,
-  Menu,
-  X,
-} from "lucide-react";
-
-import CreonoxLogo from "../creonox-logo";
+import { useEffect, useState } from "react";
+import { ArrowRight, Menu, X } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
-  const [scrolled, setScrolled] =
-    useState(false);
+  const pathname = usePathname();
 
-  const [
-    mobileMenuOpen,
-    setMobileMenuOpen,
-  ] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] =
+    useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,6 +30,20 @@ export default function Header() {
         handleScroll
       );
   }, []);
+
+  useEffect(() => {
+    setMobileMenuOpen(false);
+  }, [pathname]);
+
+  useEffect(() => {
+    document.body.style.overflow =
+      mobileMenuOpen ? "hidden" : "unset";
+
+    return () => {
+      document.body.style.overflow =
+        "unset";
+    };
+  }, [mobileMenuOpen]);
 
   const navigation = [
     {
@@ -64,17 +72,17 @@ export default function Header() {
     <header
       className={`
         fixed
-        left-0
         top-0
+        left-0
         z-50
         w-full
-
         transition-all
         duration-300
 
-        ${scrolled
-          ? "bg-[#f7f7fb]/80 backdrop-blur-xl"
-          : "bg-[#f7f7fb]/90 backdrop-blur-xl"
+        ${
+          scrolled
+            ? "bg-white/75 backdrop-blur-2xl border-b border-slate-200/60 shadow-sm"
+            : "bg-white/60 backdrop-blur-xl"
         }
       `}
     >
@@ -88,23 +96,19 @@ export default function Header() {
           justify-between
           px-4
           sm:px-6
+          lg:px-8
         "
       >
-
-
+        {/* Logo */}
         <Link
           href="/"
-          className="
-    flex
-    items-center
-    gap-3
-  "
+          className="flex items-center gap-3"
         >
           <Image
             src="/clogo.svg"
             alt="Creonox Technologies"
-            width={42}
-            height={42}
+            width={44}
+            height={44}
             priority
             className="h-10 w-10 md:h-11 md:w-11"
           />
@@ -112,30 +116,31 @@ export default function Header() {
           <div className="flex flex-col leading-none">
             <span
               className="
-        text-lg
-        font-semibold
-        tracking-[-0.04em]
-        text-slate-950
-      "
+                text-lg
+                font-semibold
+                tracking-[-0.04em]
+                text-slate-950
+              "
             >
               Creonox
             </span>
 
             <span
               className="
-        mt-1
-        text-[10px]
-        font-medium
-        uppercase
-        tracking-[0.25em]
-        text-slate-500
-      "
+                mt-1
+                text-[10px]
+                font-medium
+                uppercase
+                tracking-[0.25em]
+                text-slate-500
+              "
             >
               Technologies
             </span>
           </div>
         </Link>
-        {/* Desktop Navigation */}
+
+        {/* Desktop Nav */}
         <nav
           className="
             hidden
@@ -144,125 +149,111 @@ export default function Header() {
             lg:flex
           "
         >
-          {navigation.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="
-                group
-                relative
+          {navigation.map((item) => {
+            const isActive =
+              pathname === item.href ||
+              (item.href !== "/" &&
+                pathname.startsWith(
+                  item.href
+                ));
 
-                overflow-hidden
-
-                rounded-xl
-
-                px-4
-                py-2.5
-
-                text-sm
-                font-medium
-
-                text-slate-600
-
-                transition-all
-                duration-300
-
-                hover:text-violet-700
-              "
-            >
-              <div
-                className="
-                  absolute
-                  inset-0
-
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
+                className={`
+                  group
+                  relative
+                  overflow-hidden
                   rounded-xl
-
-                  bg-gradient-to-r
-                  from-violet-50
-                  via-fuchsia-50
-                  to-cyan-50
-
-                  opacity-0
-
+                  px-4
+                  py-2.5
+                  text-sm
+                  font-medium
                   transition-all
                   duration-300
 
-                  group-hover:opacity-100
-                "
-              />
+                  ${
+                    isActive
+                      ? "text-violet-700"
+                      : "text-slate-600 hover:text-violet-700"
+                  }
+                `}
+              >
+                <div
+                  className={`
+                    absolute
+                    inset-0
+                    rounded-xl
+                    bg-gradient-to-r
+                    from-violet-50
+                    via-fuchsia-50
+                    to-cyan-50
+                    transition-all
+                    duration-300
 
-              <div
-                className="
-                  absolute
-                  bottom-0
-                  left-1/2
+                    ${
+                      isActive
+                        ? "opacity-100"
+                        : "opacity-0 group-hover:opacity-100"
+                    }
+                  `}
+                />
 
-                  h-[2px]
-                  w-0
+                <div
+                  className={`
+                    absolute
+                    bottom-0
+                    left-1/2
+                    h-[2px]
+                    -translate-x-1/2
+                    rounded-full
+                    bg-gradient-to-r
+                    from-violet-500
+                    to-fuchsia-500
+                    transition-all
+                    duration-300
 
-                  -translate-x-1/2
+                    ${
+                      isActive
+                        ? "w-8"
+                        : "w-0 group-hover:w-8"
+                    }
+                  `}
+                />
 
-                  rounded-full
-
-                  bg-gradient-to-r
-                  from-violet-500
-                  to-fuchsia-500
-
-                  transition-all
-                  duration-300
-
-                  group-hover:w-8
-                "
-              />
-
-              <span className="relative z-10">
-                {item.label}
-              </span>
-            </Link>
-          ))}
+                <span className="relative z-10">
+                  {item.label}
+                </span>
+              </Link>
+            );
+          })}
         </nav>
 
         {/* Right Side */}
-        <div
-          className="
-            flex
-            items-center
-            gap-3
-          "
-        >
-          {/* Desktop CTA */}
+        <div className="flex items-center gap-3">
           <Link
             href="/products"
             className="
               group
-
               hidden
               sm:inline-flex
-
               items-center
               gap-2
-
               rounded-xl
-
               bg-gradient-to-r
               from-violet-600
               via-fuchsia-600
               to-cyan-500
-
               px-5
               py-2.5
-
               text-sm
               font-medium
-
               text-white
-
               shadow-lg
               shadow-violet-500/20
-
               transition-all
               duration-300
-
               hover:-translate-y-0.5
               hover:shadow-xl
             "
@@ -274,14 +265,13 @@ export default function Header() {
               className="
                 transition-transform
                 duration-300
-
                 group-hover:translate-x-1
               "
             />
           </Link>
 
-          {/* Mobile Menu Button */}
           <button
+            aria-label="Toggle Menu"
             onClick={() =>
               setMobileMenuOpen(
                 !mobileMenuOpen
@@ -291,17 +281,12 @@ export default function Header() {
               flex
               h-10
               w-10
-
               items-center
               justify-center
-
               rounded-xl
-
               border
               border-slate-200
-
               bg-white
-
               lg:hidden
             "
           >
@@ -318,15 +303,14 @@ export default function Header() {
       <div
         className={`
           overflow-hidden
-
           transition-all
           duration-300
-
           lg:hidden
 
-          ${mobileMenuOpen
-            ? "max-h-[500px]"
-            : "max-h-0"
+          ${
+            mobileMenuOpen
+              ? "max-h-[600px]"
+              : "max-h-0"
           }
         `}
       >
@@ -334,9 +318,7 @@ export default function Header() {
           className="
             border-t
             border-slate-200
-
             bg-white/95
-
             backdrop-blur-xl
           "
         >
@@ -344,68 +326,56 @@ export default function Header() {
             className="
               flex
               flex-col
-
               gap-1
-
               px-6
               py-6
             "
           >
-            {navigation.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                onClick={() =>
-                  setMobileMenuOpen(false)
-                }
-                className="
-                  rounded-xl
+            {navigation.map((item) => {
+              const isActive =
+                pathname === item.href;
 
-                  px-4
-                  py-3
+              return (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={`
+                    rounded-xl
+                    px-4
+                    py-3
+                    text-base
+                    font-medium
+                    transition-all
 
-                  text-base
-                  font-medium
-
-                  text-slate-700
-
-                  transition-colors
-
-                  hover:bg-violet-50
-                  hover:text-violet-700
-                "
-              >
-                {item.label}
-              </Link>
-            ))}
+                    ${
+                      isActive
+                        ? "bg-violet-50 text-violet-700"
+                        : "text-slate-700 hover:bg-violet-50 hover:text-violet-700"
+                    }
+                  `}
+                >
+                  {item.label}
+                </Link>
+              );
+            })}
 
             <Link
               href="/products"
-              onClick={() =>
-                setMobileMenuOpen(false)
-              }
               className="
                 mt-4
-
                 inline-flex
                 items-center
                 justify-center
                 gap-2
-
                 rounded-xl
-
                 bg-gradient-to-r
                 from-violet-600
                 via-fuchsia-600
                 to-cyan-500
-
                 px-5
                 py-3
-
                 font-medium
-
                 text-white
-
                 shadow-lg
                 shadow-violet-500/20
               "
@@ -420,3 +390,4 @@ export default function Header() {
     </header>
   );
 }
+

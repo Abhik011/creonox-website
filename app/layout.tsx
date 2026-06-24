@@ -133,7 +133,7 @@ export default function RootLayout({
 
         <Analytics/>
         <Header />
-        <main className="pt-20">
+        <main className="pt-10">
           {children}
         </main>
         <Footer />
